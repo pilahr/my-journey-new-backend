@@ -3,7 +3,7 @@ require("dotenv").config();
 const cors = require("cors");
 const express = require("express");
 const mongoose = require("mongoose");
-const Product = require("./models/productModel");
+const Product = require("./productModel");
 const app = express();
 
 app.use(cors({ origin: "http://localhost:3000" }));

@@ -1,12 +1,13 @@
 require("dotenv").config();
 
-// const cors = require("cors");
+const cors = require("cors");
 const express = require("express");
 const mongoose = require("mongoose");
 const Product = require("./productModel");
 const app = express();
 
 // app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://my-journey-20eb0.web.app" }));
 app.use(express.json());
 
 // routes
